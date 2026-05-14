@@ -1,0 +1,162 @@
+#
+#             ╔══════════════════════════════════════════════╗
+#             ║            PiglinSMP - Config                ║
+#             ║                by Zyumie                     ║
+#             ║  My Discord : https://discord.gg/dyccdcXMJn  ║
+#             ╚══════════════════════════════════════════════╝
+#
+
+# ============================================================
+# Couleurs : utilisez les codes &x (ex: &6 = or, &c = rouge)
+# Toutes les armes sont obtenues via Piglin Bartering
+# ============================================================
+
+weapons:
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #1 — Arc du Nether Instable
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  nether_unstable_bow:
+    enabled: true
+    display-name: "&6[Arc du Nether Instable]"
+    description: "&7Un arc imprévisible qui tire différents projectiles à effets aléatoires."
+    rarity: "&ePeu Commun"
+    drop-rate: 0.015        # 1.5%
+    effects:
+      cooldown-ticks: 20    # 1 seconde entre effets spéciaux
+      explosion-power: 1.2  # Puissance de l'explosion (no-grief)
+      fire-duration-ticks: 60  # 3 secondes de feu
+      slow-duration-ticks: 60  # 3 secondes de lenteur
+      slow-amplifier: 1        # SLOW niveau 2 (0 = niveau 1)
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #2 — Lame du Poison
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  poison_blade:
+    enabled: true
+    display-name: "&2[Lame du Poison]"
+    description: "&7Une arme lente mais mortelle. Plus tu frappes, plus le poison s'accumule."
+    rarity: "&aCommun"
+    drop-rate: 0.017        # 1.7%
+    effects:
+      stack-reset-ticks: 200  # 10 secondes avant reset du stack
+      hit1-duration-ticks: 100  # 5 secondes
+      hit1-amplifier: 0         # POISON 1
+      hit2-duration-ticks: 100  # 5 secondes
+      hit2-amplifier: 1         # POISON 2
+      hit3-duration-ticks: 140  # 7 secondes
+      hit3-amplifier: 2         # POISON 3
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #3 — Dague du Voleur
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  thief_dagger:
+    enabled: true
+    display-name: "&5[Dague du Voleur]"
+    description: "&7Une arme furtive qui vole des ressources à l'ennemi à chaque attaque."
+    rarity: "&ePeu Commun"
+    drop-rate: 0.012        # 1.2%
+    effects:
+      steal-chance: 35      # % de chance de voler un item
+      drop-chance: 50       # % (sur steal réussi) que l'item tombe au sol plutôt qu'en inventaire
+      cooldown-ticks: 40    # 2 secondes par cible
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #4 — Épée du Temps
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  time_sword:
+    enabled: true
+    display-name: "&b[Épée du Temps]"
+    description: "&7Une arme mystique qui ralentit ses ennemis dans un temps distordu."
+    rarity: "&6Rare"
+    drop-rate: 0.007        # 0.7%
+    effects:
+      slowness-duration-ticks: 60   # 3 secondes
+      slowness-amplifier: 2         # SLOWNESS 3
+      fatigue-duration-ticks: 60    # 3 secondes
+      fatigue-amplifier: 1          # MINING_FATIGUE 2
+      freeze-chance: 15             # % de chance de freeze total
+      freeze-duration-ticks: 20     # 1 seconde de freeze
+      cooldown-ticks: 60            # 3 secondes
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #5 — Épée du Berserker
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  berserker_sword:
+    enabled: true
+    display-name: "&c[Épée du Berserker]"
+    description: "&7Une arme qui devient incontrôlable en combat. La rage grandit à chaque coup."
+    rarity: "&6Rare"
+    drop-rate: 0.008        # 0.8%
+    effects:
+      stack-reset-ticks: 160  # 8 secondes avant reset de la rage
+      max-stacks: 10
+      # Seuil 1 : +1 stack
+      tier1-stacks: 1
+      tier1-speed-amplifier: 0   # SPEED 1
+      tier1-speed-duration-ticks: 100
+      tier1-atk-bonus: 0.05      # +5% dégâts
+      # Seuil 2 : +5 stacks
+      tier2-stacks: 5
+      tier2-speed-amplifier: 1   # SPEED 2
+      tier2-speed-duration-ticks: 100
+      tier2-atk-bonus: 0.15      # +15% dégâts
+      # Seuil 3 : +10 stacks (max)
+      tier3-stacks: 10
+      tier3-speed-amplifier: 2   # SPEED 3
+      tier3-speed-duration-ticks: 100
+      tier3-atk-bonus: 0.30      # +30% dégâts
+      tier3-weakness-chance: 20  # % de chance de WEAKNESS sur la cible
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #6 — Épée du Jugement Piglin
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  piglin_judgment_sword:
+    enabled: true
+    display-name: "&e[Épée du Jugement Piglin]"
+    description: "&7L'arme suprême des Piglins. Ses dégâts augmentent selon la richesse en or de la cible."
+    rarity: "&4[ULTRA RARE]"
+    drop-rate: 0.001        # 0.1%
+    effects:
+      damage-per-gold: 0.3       # Dégâts bonus par lingot d'or équivalent
+      max-bonus-damage: 15.0     # Plafond de dégâts bonus
+      ender-chest-bonus: 2.0     # +2 dégâts si la cible a un ender chest
+      thunder-threshold: 10.0    # Bonus minimum pour déclencher le son tonnerre
+
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  # #7 — Bâton du Trickster
+  # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  trickster_staff:
+    enabled: true
+    display-name: "&d[Bâton du Trickster]"
+    description: "&7Une arme chaotique et imprévisible. Chaque frappe est une surprise."
+    rarity: "&aCommun"
+    drop-rate: 0.018        # 1.8%
+    effects:
+      # Chances cumulatives sur 100 (doivent totaliser <= 100)
+      invisibility-chance: 20    # % invisibilité 2s sur l'attaquant
+      poison-chance: 20          # % POISON 2 (4s) sur la cible
+      blindness-chance: 15       # % BLINDNESS 2s sur la cible
+      levitation-chance: 15      # % LEVITATION 1s sur la cible
+      confusion-chance: 10       # % NAUSEA 3s sur la cible
+      speed-chance: 10           # % SPEED 2 (3s) sur l'attaquant
+      # Le reste = "Raté !"
+      invisibility-duration-ticks: 40
+      poison-duration-ticks: 80
+      poison-amplifier: 1        # POISON 2
+      blindness-duration-ticks: 40
+      levitation-duration-ticks: 20
+      confusion-duration-ticks: 60
+      speed-duration-ticks: 60
+      speed-amplifier: 1         # SPEED 2
+
+# ============================================================
+# Paramètres globaux
+# ============================================================
+settings:
+  # Remplace entièrement le drop normal du bartering (true = seule l'arme drope)
+  replace-normal-drops: true
+  # Portée max des particules (en blocs)
+  particle-range: 16
+  # Préfixe des messages en jeu
+  prefix: "&8[&6PiglinWeapons&8] &r"

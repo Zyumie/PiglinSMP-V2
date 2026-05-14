@@ -1,0 +1,21 @@
+name: PiglinSMP
+version: 1.0.0
+main: fr.zyumie.PiglinSMP.Main
+api-version: '1.21'
+author: Zyumie (aka AyanoBrz)
+website: https://www.youtube.com/@AyanoBrz
+description: Trade Custom Armes
+
+commands:
+  pweapons:
+    description: PiglinWeapons admin commands
+    usage: /pweapons <give|reload> [weapon] [player]
+    permission: piglinweapons.admin
+    aliases:
+      - pw
+      - PW
+
+permissions:
+  piglinweapons.admin:
+    description: Access to all PiglinWeapons admin commands
+    default: op
