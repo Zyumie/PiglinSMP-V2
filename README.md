@@ -220,27 +220,15 @@ Trickster:
 ```text
 fr.zyumie.PiglinWeapons
 ├── Main.java
-├── Weapon/
-│   ├── WeaponManager
-│   ├── WeaponFactory
-│   └── WeaponRegistry
 ├── Listener/
 │   ├── BarterListener
 │   ├── CombatListener
 │   ├── ProjectileListener
-│   └── PlayerListener
 ├── Command/
-│   ├── ReloadCommand
-│   ├── GiveCommand
-│   └── ListCommand
+│   ├── PWeaponCommand
 ├── Manager/
 │   ├── CooldownManager
-│   ├── RageManager
-│   ├── PoisonManager
-│   └── ConfigManager
-└── Utils/
-    ├── PDCUtils
-    └── ItemBuilder
+│   ├── WeaponManager
 ```
 
 ---
