@@ -228,7 +228,8 @@ fr.zyumie.PiglinWeapons
 │   ├── PWeaponCommand
 ├── Manager/
 │   ├── CooldownManager
-│   ├── WeaponManager
+│   └── WeaponManager
+└──
 ```
 
 ---
