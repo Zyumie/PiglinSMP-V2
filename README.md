@@ -7,11 +7,11 @@
 
 ---
 
-# 🔥 PiglinWeapons — Plugin Minecraft
+# 🔥 PiglinSMP — Plugin Minecraft
 
 ### 📌 Version 1.0.0
 
-- **Plugin :** PiglinWeapons
+- **Plugin :** PiglinSMP
 - **Auteur :** Zyumie (aka Ayano)
 - **Compatibilité :** PaperMC / Purpur 1.21+
 - **Type :** Custom Piglin Bartering Weapons
@@ -20,7 +20,7 @@
 
 ## 🧠 Concept
 
-**PiglinWeapons** ajoute plusieurs armes uniques obtenables uniquement via le **Piglin Bartering**.
+**PiglinSMP** ajoute plusieurs armes uniques obtenables uniquement via le **Piglin Bartering**.
 
 Chaque arme possède :
 - ses propres capacités
